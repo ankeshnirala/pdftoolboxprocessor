@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello world</title>
+</head>
+<script src="socket.io/socket.io.js"></script>
+<script>
+    var socket = io.connect('http://localhost:8000');
+    socket.on('620cd6eac1d9f5628f0cb3a6', function (data) { console.log(data, "DATA"); });
+</script>
+
+<body>Hello world</body>
+
+</html>

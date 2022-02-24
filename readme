@@ -1,0 +1,23 @@
+1. Clone All Code (After installing git)
+    - git clone <clone url>
+2. Install Latest node & npm
+    - upgrade npm by <npm install -g npm>
+3. Install Library
+    - npm install
+4. Install PM2 (Globally)
+    - npm install pm2 -g
+5. Install PM2 typescript
+    - pm2 install typescript
+6. Install pm2-logrotate
+    - pm2 install pm2-logrotate
+7. pm2-logrotate Set Up
+    - pm2 set pm2-logrotate:max_size 10M
+    - pm2 set pm2-logrotate:retain 30
+    - pm2 set pm2-logrotate:compress true
+    - pm2 set pm2-logrotate:workerInterval 30
+    - pm2 set pm2-logrotate:rotateInterval '0 0 * * *'
+    - pm2 set pm2-logrotate:rotateModule true
+8. Start Application
+    - pm2 start pm2.setting.json
+
+    NOTE :- You can set number of instance by editing pm2.setting.json(update instances)

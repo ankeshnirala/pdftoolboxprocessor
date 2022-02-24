@@ -1,0 +1,9 @@
+export const campaignName = "Campaign name must be with valid name";
+export const storeName = "Campaign must have store name";
+export const campaignType = "Campaign type need to be entered";
+export const salesStaff = "Sales staff is required";
+export const category = "Campaign must be with it's category";
+export const location = "Campaign must have location";
+export const product = "Campaign must have product details";
+export const startDate = "Campaign must have start date";
+export const endDate = "Campaign must have end date";

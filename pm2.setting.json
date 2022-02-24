@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "gigmos_backend",
+      "exec_mode": "cluster",
+      "interpreter": "ts-node",
+      "instances": 4,
+      "script": "src/index.ts",
+      "autorestart": true,
+      "watch": false,
+      "restart_delay": 0,
+      "log_date_format": "YYYY-MM-DD HH:mm",
+      "error_file": "./errorLogs/pm2_errors.log",
+      "out_file": "./errorLogs/pm2_logs.log",
+      "combine_logs": true,
+      "merge_logs": true,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
